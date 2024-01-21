@@ -8,9 +8,10 @@ server.on('connection', (websocket) => {
     
     const clientId = uuidv4();
     websocket.clientId = clientId;
-    websocket.position = {x: randomInteger(0, 10), y: randomInteger(1, 10), z: randomInteger(0, 10)};
+    websocket.position = {x: randomInteger(0, 10), y: 10, z: randomInteger(0, 10)};
+    websocket.rotation = {x: 0, y: 0, z: 0};
     
-    sendToEveryoneElse(clientId, JSON.stringify({type: "newPlayerJoinedLobby", id: clientId, position: websocket.position}));
+    sendToEveryoneElse(clientId, JSON.stringify({type: "newPlayerJoinedLobby", id: clientId, position: websocket.position, rotation: websocket.rotation}));
     
     console.log('Client connected: ' + websocket.clientId);
 
@@ -21,7 +22,7 @@ server.on('connection', (websocket) => {
         
         switch (data.type) {
             case "position":
-                let sendData = {type: "position", who: websocket.clientId, position: data.position};
+                let sendData = {type: "position", who: websocket.clientId, position: data.position, rotation: data.rotation};
                 sendToEveryoneElse(websocket.clientId, JSON.stringify(sendData));
                 break;
             case "lobby":

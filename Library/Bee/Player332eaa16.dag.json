@@ -146,7 +146,12 @@
         138,
         139,
         140,
-        141
+        141,
+        142,
+        143,
+        144,
+        145,
+        146
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -300,7 +305,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 16011,
+      "PayloadLength": 16630,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -397,12 +402,17 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
         "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp-firstpass.dll",
         "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.Stl.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.dll",
         "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.Csg.dll",
         "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.Poly2Tri.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.KdTree.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
         "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
@@ -1330,40 +1340,28 @@
       "DebugActionIndex": 85
     },
     {
-      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.Timeline.dll",
-      "DisplayName": "Copying Unity.Timeline.dll",
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.Stl.dll",
+      "DisplayName": "Copying Unity.ProBuilder.Stl.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.Stl.dll"
       ],
       "Outputs": [
-        "TestBuilds/Multiplayer_Data/Managed/Unity.Timeline.dll"
+        "TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.Stl.dll"
       ],
       "DebugActionIndex": 86
     },
     {
-      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/UnityEngine.UI.dll",
-      "DisplayName": "Copying UnityEngine.UI.dll",
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.dll",
+      "DisplayName": "Copying Unity.ProBuilder.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.dll"
       ],
       "Outputs": [
-        "TestBuilds/Multiplayer_Data/Managed/UnityEngine.UI.dll"
+        "TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.dll"
       ],
       "DebugActionIndex": 87
-    },
-    {
-      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.TextMeshPro.dll",
-      "DisplayName": "Copying Unity.TextMeshPro.dll",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
-      ],
-      "Outputs": [
-        "TestBuilds/Multiplayer_Data/Managed/Unity.TextMeshPro.dll"
-      ],
-      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -1375,17 +1373,29 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.Core.dll"
       ],
+      "DebugActionIndex": 88
+    },
+    {
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/UnityEngine.UI.dll",
+      "DisplayName": "Copying UnityEngine.UI.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
+      ],
+      "Outputs": [
+        "TestBuilds/Multiplayer_Data/Managed/UnityEngine.UI.dll"
+      ],
       "DebugActionIndex": 89
     },
     {
-      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.State.dll",
-      "DisplayName": "Copying Unity.VisualScripting.State.dll",
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.Csg.dll",
+      "DisplayName": "Copying Unity.ProBuilder.Csg.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.Csg.dll"
       ],
       "Outputs": [
-        "TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.State.dll"
+        "TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.Csg.dll"
       ],
       "DebugActionIndex": 90
     },
@@ -1402,6 +1412,66 @@
       "DebugActionIndex": 91
     },
     {
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.Timeline.dll",
+      "DisplayName": "Copying Unity.Timeline.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
+      ],
+      "Outputs": [
+        "TestBuilds/Multiplayer_Data/Managed/Unity.Timeline.dll"
+      ],
+      "DebugActionIndex": 92
+    },
+    {
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.Poly2Tri.dll",
+      "DisplayName": "Copying Unity.ProBuilder.Poly2Tri.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.Poly2Tri.dll"
+      ],
+      "Outputs": [
+        "TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.Poly2Tri.dll"
+      ],
+      "DebugActionIndex": 93
+    },
+    {
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.KdTree.dll",
+      "DisplayName": "Copying Unity.ProBuilder.KdTree.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.ProBuilder.KdTree.dll"
+      ],
+      "Outputs": [
+        "TestBuilds/Multiplayer_Data/Managed/Unity.ProBuilder.KdTree.dll"
+      ],
+      "DebugActionIndex": 94
+    },
+    {
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.TextMeshPro.dll",
+      "DisplayName": "Copying Unity.TextMeshPro.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
+      ],
+      "Outputs": [
+        "TestBuilds/Multiplayer_Data/Managed/Unity.TextMeshPro.dll"
+      ],
+      "DebugActionIndex": 95
+    },
+    {
+      "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.State.dll",
+      "DisplayName": "Copying Unity.VisualScripting.State.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "C:/Users/vmano/Documents/Programming/Unity/Games/Multiplayer/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
+      ],
+      "Outputs": [
+        "TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.State.dll"
+      ],
+      "DebugActionIndex": 96
+    },
+    {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
       "DisplayName": "Copying Unity.VisualScripting.Antlr3.Runtime.dll",
       "ActionType": "CopyFiles",
@@ -1411,7 +1481,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Newtonsoft.Json.dll",
@@ -1423,7 +1493,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/netstandard.dll",
@@ -1435,7 +1505,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/Mono.Security.dll",
@@ -1447,7 +1517,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.ComponentModel.Composition.dll",
@@ -1459,7 +1529,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Configuration.dll",
@@ -1471,7 +1541,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Core.dll",
@@ -1483,7 +1553,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -1495,7 +1565,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Data.dll",
@@ -1507,7 +1577,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Drawing.dll",
@@ -1519,7 +1589,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.EnterpriseServices.dll",
@@ -1531,7 +1601,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -1543,7 +1613,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.IO.Compression.dll",
@@ -1555,7 +1625,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Net.Http.dll",
@@ -1567,7 +1637,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Numerics.dll",
@@ -1579,7 +1649,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Runtime.Serialization.dll",
@@ -1591,7 +1661,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Security.dll",
@@ -1603,7 +1673,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.ServiceModel.Internals.dll",
@@ -1615,7 +1685,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Transactions.dll",
@@ -1627,7 +1697,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Xml.Linq.dll",
@@ -1639,7 +1709,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.Xml.dll",
@@ -1651,7 +1721,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/System.dll",
@@ -1663,7 +1733,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Managed/mscorlib.dll",
@@ -1675,20 +1745,20 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 16183,
+      "PayloadOffset": 16802,
       "PayloadLength": 26,
       "PayloadDebugContentSnippet": "DefaultCompany\nMultiplayer",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/app.info",
@@ -1701,9 +1771,9 @@
         "TestBuilds/Multiplayer_Data/app.info"
       ],
       "ToBuildDependencies": [
-        115
+        120
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer_Data/Resources/unity default resources",
@@ -1715,7 +1785,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles TestBuilds/Multiplayer.exe",
@@ -1727,7 +1797,7 @@
       "Outputs": [
         "TestBuilds/Multiplayer.exe"
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -1739,7 +1809,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -1751,7 +1821,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -1763,7 +1833,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -1775,7 +1845,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -1787,7 +1857,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -1799,7 +1869,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -1811,7 +1881,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -1823,7 +1893,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -1835,7 +1905,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -1847,7 +1917,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -1859,7 +1929,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -1871,7 +1941,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -1883,7 +1953,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -1895,7 +1965,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -1907,7 +1977,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -1919,7 +1989,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -1931,7 +2001,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -1943,7 +2013,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/config",
@@ -1955,7 +2025,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles TestBuilds/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -1967,7 +2037,7 @@
       "Outputs": [
         "TestBuilds/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles TestBuilds/UnityCrashHandler64.exe",
@@ -1979,7 +2049,7 @@
       "Outputs": [
         "TestBuilds/UnityCrashHandler64.exe"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles TestBuilds/UnityPlayer.dll",
@@ -1991,7 +2061,7 @@
       "Outputs": [
         "TestBuilds/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "Player",
@@ -2111,11 +2181,11 @@
         112,
         113,
         114,
+        115,
         116,
         117,
         118,
         119,
-        120,
         121,
         122,
         123,
@@ -2135,10 +2205,15 @@
         137,
         138,
         139,
-        140
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 141
+      "DebugActionIndex": 146
     }
   ],
   "FileSignatures": [
@@ -2339,7 +2414,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 141
+          "Player": 146
         }
 ,  "DefaultNodes": [
     0

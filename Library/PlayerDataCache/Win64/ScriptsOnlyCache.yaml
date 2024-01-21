@@ -89,29 +89,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1948}
+      Script: {instanceID: 1974}
     - Class: 114
-      Script: {instanceID: 2170}
+      Script: {instanceID: 2196}
     - Class: 114
-      Script: {instanceID: 2594}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2826}
     - Class: 114
-      Script: {instanceID: 3356}
+      Script: {instanceID: 3382}
     - Class: 114
-      Script: {instanceID: 4094}
+      Script: {instanceID: 3708}
     - Class: 114
-      Script: {instanceID: 4350}
+      Script: {instanceID: 4122}
     - Class: 114
-      Script: {instanceID: 5052}
+      Script: {instanceID: 4378}
     - Class: 114
-      Script: {instanceID: 5606}
+      Script: {instanceID: 5080}
     - Class: 114
-      Script: {instanceID: 5758}
+      Script: {instanceID: 5634}
     - Class: 114
-      Script: {instanceID: 6084}
+      Script: {instanceID: 5786}
     - Class: 114
-      Script: {instanceID: 23334}
+      Script: {instanceID: 6112}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -439,6 +439,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ba2543c2701ad11bca33d47467375dd6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: 0a3f328f3ea906bbbcf794f4c27ee59d
@@ -963,10 +969,58 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 7edbaa6a6b43c4859bfbe0efb3af8e95
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Player
+      Hash: df79ccb4cd3f3f8a5449fcd589774b35
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: PreferenceDictionary
+  - hash:
+      serializedVersion: 2
+      Hash: 32e45e9321b32487564fbc9be7df51eb
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: ProBuilderMesh
+  - hash:
+      serializedVersion: 2
+      Hash: e3e8664035357fc3cb2713a5c719e060
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: ColliderBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: c9ea7fc6e584a91f99e24369a904c607
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: Entity
+  - hash:
+      serializedVersion: 2
+      Hash: 19c7094e1c1b151057c372890e57f46f
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: BezierShape
+  - hash:
+      serializedVersion: 2
+      Hash: bf16f3f7cc6924018428428f7664a0d0
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: PolyShape
+  - hash:
+      serializedVersion: 2
+      Hash: db79736741eab4b57f517a51185b9563
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder.Shapes
+    className: ProBuilderShape
+  - hash:
+      serializedVersion: 2
+      Hash: fddc1d0815370c41972670aaf78cbc9a
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: ColorPalette
+  - hash:
+      serializedVersion: 2
+      Hash: ab146b9b456a0ac8917d892a3f2e3f4b
+    assemblyName: Unity.ProBuilder
+    namespaceName: UnityEngine.ProBuilder
+    className: TriggerBehaviour
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

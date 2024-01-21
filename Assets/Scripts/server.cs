@@ -25,6 +25,7 @@ public class server : MonoBehaviour
         public string type;
         public string who;
         public Vector3 position;
+        public Vector3 rotation;
     }
 
     // In the start you get all the information
@@ -121,10 +122,6 @@ public class server : MonoBehaviour
             changeThingsList = new List<ChangeThings>();
         }
 
-        if(Input.GetKeyUp(KeyCode.Space)) {
-            SendPosition(player.transform.position);
-        }
-
         if(!haveIds && ws != null && ws.IsAlive) {
             ws.Send(JsonUtility.ToJson(new Ask{type = "lobby"}));
             haveIds = true;
@@ -144,17 +141,16 @@ public class server : MonoBehaviour
                 if(data.who == players[i].GetComponent<PlayerSync>().id) {
                     int currentOtherIndex = i;
                     changeThingsList.Add(() => {
-                        Debug.Log(currentOtherIndex);
-                        players[currentOtherIndex].transform.position = data.position;
+                        players[currentOtherIndex].GetComponent<PlayerSync>().ChangePosition(data.position, data.rotation);
                     });
                 }
             }
         }
     }
 
-    public void SendPosition(Vector3 newPosition) {
+    public void SendPosition(Vector3 newPosition, Vector3 newRotation) {
         if(myId != "") {
-            Position dataObj = new Position{type = "position", who = myId, position = newPosition};
+            Position dataObj = new Position{type = "position", who = myId, position = newPosition, rotation = newRotation};
             string dataStr = JsonUtility.ToJson(dataObj);
             ws.Send(dataStr);
         }
