@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private float cameraRotationX = 0f;
     private Rigidbody rb;
 
+    private Camera cam;
+
     public float ms;
     private server server;
     private float time = 0;
@@ -25,6 +27,8 @@ public class Player : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        cam = GetComponentInChildren<Camera>();
     }
 
     void Update() {
@@ -38,7 +42,7 @@ public class Player : MonoBehaviour
     void FixedUpdate() {
         time += 0.5f;
         if(time%ms == 0) {
-            server.SendPosition(transform.position, new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z));
+            server.SendPosition(transform.position, new Vector3(cam.gameObject.transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z));
         }
     }
 
@@ -67,8 +71,6 @@ public class Player : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
         transform.Rotate(Vector3.up * mouseX);
-
-        Camera cam = GetComponentInChildren<Camera>();
         if (cam != null) {
             cameraRotationX -= mouseY;
             cameraRotationX = Mathf.Clamp(cameraRotationX, -90f, 90f);

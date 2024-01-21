@@ -134,9 +134,6 @@ public class server : MonoBehaviour
                 player.transform.position = data.position;
             });
         } else {
-            changeThingsList.Add(() => {
-                info.text = players.Count.ToString();
-            });
             for(int i = 0; i < players.Count; i++) {
                 if(data.who == players[i].GetComponent<PlayerSync>().id) {
                     int currentOtherIndex = i;
