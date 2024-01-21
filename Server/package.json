@@ -1,0 +1,17 @@
+{
+  "name": "multiplayer",
+  "version": "1.0.0",
+  "description": "This is a test multiplayer. I want to see how I can make it happen.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Ventsislav Manoilov",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.3",
+    "uuid": "^9.0.1",
+    "ws": "^8.16.0"
+  }
+}
