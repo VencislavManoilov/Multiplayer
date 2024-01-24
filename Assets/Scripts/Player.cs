@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
+    public TextMeshProUGUI healthText;
+
+    [Space]
     public float moveSpeed = 5f;
     public float jumpHeight = 2f;
     public float fallMultiplier = 2f;
     public float sensitivity = 2f;
+
+    [HideInInspector]
+    public int health;
 
     private bool isGrounded;
     private float cameraRotationX = 0f;
@@ -37,6 +44,8 @@ public class Player : MonoBehaviour
         if (rb.velocity.y < 0) {
             rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
+
+        healthText.text = health.ToString();
     }
 
     void FixedUpdate() {

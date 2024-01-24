@@ -4,14 +4,17 @@ const PORT = 3000;
 
 const server = new WebSocket.Server({ port: PORT });
 
+let sendData;
+
 server.on('connection', (websocket) => {
     
     const clientId = uuidv4();
     websocket.clientId = clientId;
     websocket.position = {x: randomInteger(0, 10), y: 10, z: randomInteger(0, 10)};
     websocket.rotation = {x: 0, y: 0, z: 0};
+    websocket.health = 100;
     
-    sendToEveryoneElse(clientId, JSON.stringify({type: "newPlayerJoinedLobby", id: clientId, position: websocket.position, rotation: websocket.rotation}));
+    sendToEveryoneElse(clientId, JSON.stringify({type: "newPlayerJoinedLobby", id: clientId, position: websocket.position, rotation: websocket.rotation, health: websocket.health}));
     
     console.log('Client connected: ' + websocket.clientId);
 
@@ -22,19 +25,34 @@ server.on('connection', (websocket) => {
         
         switch (data.type) {
             case "position":
-                let sendData = {type: "position", who: websocket.clientId, position: data.position, rotation: data.rotation};
+                sendData = {type: "position", who: websocket.clientId, position: data.position, rotation: data.rotation};
                 sendToEveryoneElse(websocket.clientId, JSON.stringify(sendData));
                 break;
+            case "health":
+                const targetClient = getClientById(data.id);
+
+                if(targetClient) {
+                    targetClient.health = data.health;
+
+                    sendData = {type: "health", who: data.id, health: data.health};
+                    sendToEveryoneElse(websocket.clientId, JSON.stringify(sendData));
+                } else {
+                    console.log(`Client with id ${data.id} not found.`);
+                }
+
+                break;
             case "lobby":
-                let otherIds = [], otherPositions = [];
+                let otherIds = [], otherPositions = [], otherHeath = [];
                 server.clients.forEach((client) => {
                     if (client.clientId !== websocket.clientId) {
                         otherIds.push(client.clientId);
                         otherPositions.push({x: client.position.x, y: client.position.y, z: client.position.z});
+                        otherHeath.push(client.health);
                     }
                 });
 
-                sendToOne(websocket.clientId, JSON.stringify({type: "lobby", myId: websocket.clientId, myPosition: websocket.position, otherIds: otherIds, otherPositions: otherPositions}));
+                sendData = {type: "lobby", myId: websocket.clientId, myPosition: websocket.position, otherIds: otherIds, otherPositions: otherPositions, health: otherHeath};
+                sendToOne(websocket.clientId, JSON.stringify(sendData));
                 break;
             default:
                 console.log("What is this: " + data.type);
@@ -72,6 +90,10 @@ function sendToEveryoneElse(whoNot, message) {
             client.send(message);
         }
     });
+}
+
+function getClientById(clientId) {
+    return [...server.clients].find((client) => client.clientId === clientId);
 }
 
 function randomInteger(min, max) {

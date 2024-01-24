@@ -98,23 +98,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2970}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3350}
     - Class: 114
-      Script: {instanceID: 3936}
+      Script: {instanceID: 3590}
     - Class: 114
-      Script: {instanceID: 4392}
+      Script: {instanceID: 3938}
     - Class: 114
-      Script: {instanceID: 4672}
+      Script: {instanceID: 4394}
     - Class: 114
-      Script: {instanceID: 5458}
+      Script: {instanceID: 4674}
     - Class: 114
-      Script: {instanceID: 6074}
+      Script: {instanceID: 5460}
     - Class: 114
-      Script: {instanceID: 6240}
+      Script: {instanceID: 6076}
     - Class: 114
-      Script: {instanceID: 6612}
+      Script: {instanceID: 6242}
     - Class: 114
-      Script: {instanceID: 24186}
+      Script: {instanceID: 6614}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -368,6 +368,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: afd7edc1bbb1f8b9366dc98ebb43aced
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Gun
+  - hash:
+      serializedVersion: 2
       Hash: d90629714fa6b0145fcaffc87f5c6559
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -422,7 +428,7 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 5d78193340520cfaa6b26433c6289562
+      Hash: e7a6278d563993d513a26e61a8cf26bf
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerSync
@@ -464,7 +470,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ba2543c2701ad11bca33d47467375dd6
+      Hash: 4714114d20a96a150d99259e60ec2c3e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Player
@@ -1026,12 +1032,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: afd7edc1bbb1f8b9366dc98ebb43aced
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Gun
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
